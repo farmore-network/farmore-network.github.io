@@ -3,13 +3,13 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Culture",
-  description: "Discover Nodods Holdings' core values and DNA. Mission alignment, unconventional excellence, community first, and long-term thinking.",
+  description: "How Farmore is built: open in public, chain-neutral by default, self-custodial without compromise.",
 };
 
 const values = [
   {
-    title: "Mission Alignment",
-    description: "Every product, every decision, every hire must serve our mission: to be the world's best for everyday people. If it doesn't serve everyday people, we don't do it.",
+    title: "Open by Default",
+    description: "Farmore is built in public. The protocol, the litepaper, and the design choices are all open for anyone to read, fork, and improve.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -17,8 +17,8 @@ const values = [
     ),
   },
   {
-    title: "Unconventional Excellence",
-    description: "We reject conventional wisdom when it fails everyday people. If it's been done before and hasn't worked for our audience, we innovate differently.",
+    title: "Chain-Neutral",
+    description: "No favorite chain. No house token. Farmore works across every blockchain — and treats them all as first-class.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
@@ -26,8 +26,8 @@ const values = [
     ),
   },
   {
-    title: "Community First",
-    description: "We build with our users. We foster constructive, collaborative environments where everyday people feel heard, valued, and empowered.",
+    title: "Self-Custodial",
+    description: "Users hold their own keys, always. Farmore never takes custody. Recovery is designed for people, not contracts.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
@@ -36,7 +36,7 @@ const values = [
   },
   {
     title: "Long-Term Thinking",
-    description: "We set for the future and optimize for the present. We're patient, principled, and relentlessly focused on building something that lasts.",
+    description: "Farmore is designed to outlast any single chain. We optimize for the next decade of blockchain, not the next cycle.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -46,11 +46,11 @@ const values = [
 ];
 
 const principles = [
-  "Values over extraction",
-  "Impact over quarterly returns",
-  "Lives improved over profit margins",
-  "Families strengthened over growth metrics",
-  "Communities empowered over market share",
+  "Open over closed",
+  "Portable over locked-in",
+  "Self-custodial over hosted",
+  "Standards over silos",
+  "Users over platforms",
 ];
 
 export default function CulturePage() {
@@ -62,12 +62,12 @@ export default function CulturePage() {
           <div className="max-w-4xl">
             <p className="text-nodods-navy font-medium text-sm uppercase tracking-widest mb-6 animate-fade-in">Our Culture</p>
             <h1 className="font-display font-semibold text-display-xl text-nodods-navy mb-8 animate-fade-in-up delay-100">
-              The Nodods
+              The Farmore
               <br />
               <span className="text-nodods-navy-light">DNA</span>
             </h1>
             <p className="text-nodods-muted text-xl leading-relaxed animate-fade-in-up delay-200">
-              Nodods Holdings operates with unwavering principles that guide every decision. Our culture isn&apos;t just what we say—it&apos;s what we do, every single day.
+              Farmore is built on principles, not marketing. Our culture isn&apos;t a slogan — it&apos;s how we design, ship, and govern.
             </p>
           </div>
         </div>
@@ -102,10 +102,10 @@ export default function CulturePage() {
               <p className="text-nodods-white/60 font-medium text-sm uppercase tracking-widest mb-4">Success Metrics</p>
               <h2 className="font-display font-semibold text-display-sm text-nodods-white mb-6">What we measure</h2>
               <p className="text-nodods-white/70 text-lg leading-relaxed mb-8">
-                We measure success differently. Our metrics aren&apos;t about maximizing shareholder value—they&apos;re about maximizing human value.
+                Farmore measures success in identities unified, value moved without friction, and chains supported as first-class. Not in seats sold or tokens minted.
               </p>
               <p className="text-2xl font-display font-medium text-nodods-white leading-relaxed">
-                &ldquo;We measure success not by quarterly returns, but by lives improved, families strengthened, and communities empowered.&rdquo;
+                &ldquo;One name. One balance. One account — for every blockchain user.&rdquo;
               </p>
             </div>
             <div className="space-y-4">
@@ -131,35 +131,35 @@ export default function CulturePage() {
             <div className="grid sm:grid-cols-2 gap-6 text-left">
               <div className="bg-nodods-light rounded-2xl p-6 border border-nodods-navy/5">
                 <h3 className="font-display font-medium text-lg text-nodods-navy mb-2">Mission-Driven</h3>
-                <p className="text-nodods-muted text-sm">Every team member is deeply committed to serving everyday people.</p>
+                <p className="text-nodods-muted text-sm">Every contributor is committed to unifying blockchain identity for everyone.</p>
               </div>
               <div className="bg-nodods-light rounded-2xl p-6 border border-nodods-navy/5">
-                <h3 className="font-display font-medium text-lg text-nodods-navy mb-2">Collaborative</h3>
-                <p className="text-nodods-muted text-sm">Great ideas come from anywhere, and everyone&apos;s voice matters.</p>
+                <h3 className="font-display font-medium text-lg text-nodods-navy mb-2">Open</h3>
+                <p className="text-nodods-muted text-sm">We ship in the open. Issues, designs, and roadmap are public.</p>
               </div>
               <div className="bg-nodods-light rounded-2xl p-6 border border-nodods-navy/5">
-                <h3 className="font-display font-medium text-lg text-nodods-navy mb-2">Unconventional</h3>
-                <p className="text-nodods-muted text-sm">We challenge the status quo and find new ways to serve.</p>
+                <h3 className="font-display font-medium text-lg text-nodods-navy mb-2">Standards-First</h3>
+                <p className="text-nodods-muted text-sm">We prefer interoperable standards over proprietary lock-in, every time.</p>
               </div>
               <div className="bg-nodods-light rounded-2xl p-6 border border-nodods-navy/5">
-                <h3 className="font-display font-medium text-lg text-nodods-navy mb-2">Impact-Focused</h3>
-                <p className="text-nodods-muted text-sm">We measure our work by the real impact it has on real people.</p>
+                <h3 className="font-display font-medium text-lg text-nodods-navy mb-2">User-Focused</h3>
+                <p className="text-nodods-muted text-sm">We design for the person sending value, not the platform routing it.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Investment Philosophy */}
+      {/* Stewardship Philosophy */}
       <section className="section-padding py-20 md:py-28 bg-nodods-light">
         <div className="page-max-width">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-nodods-navy font-medium text-sm uppercase tracking-widest mb-4">Our Approach</p>
-            <h2 className="font-display font-semibold text-display-sm text-nodods-navy mb-6">Investment Philosophy</h2>
+            <h2 className="font-display font-semibold text-display-sm text-nodods-navy mb-6">Stewardship Philosophy</h2>
             <p className="text-nodods-muted text-lg leading-relaxed mb-8">
-              We prioritize mission preservation over rapid scaling. We will accept funding only from partners who align with our mission to be the world&apos;s best for everyday people.
+              We prioritize protocol integrity over rapid scaling. Farmore takes resources only from partners aligned with open identity and self-custody.
             </p>
-            <p className="text-xl font-display font-medium text-nodods-navy">Values over extraction. Always.</p>
+            <p className="text-xl font-display font-medium text-nodods-navy">Open over closed. Always.</p>
           </div>
         </div>
       </section>
@@ -169,7 +169,7 @@ export default function CulturePage() {
         <div className="page-max-width text-center">
           <h2 className="font-display font-semibold text-display-sm text-nodods-navy mb-6">Ready to connect?</h2>
           <p className="text-nodods-muted text-lg max-w-2xl mx-auto mb-10">
-            Whether you&apos;re interested in partnerships, media inquiries, or just want to learn more, we&apos;d love to hear from you.
+            Whether you&apos;re interested in partnerships, integrations, or just want to learn more, we&apos;d love to hear from you.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link href="/contact" className="px-8 py-4 bg-nodods-navy text-nodods-white font-medium rounded-full hover:bg-nodods-navy-light transition-colors">

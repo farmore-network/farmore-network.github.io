@@ -2,6 +2,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { ImageLogo } from "@/assets/images";
 
+const LITEPAPER_URL =
+  "https://github.com/farmore-network/farmore-litepaper/blob/main/Farmore-Litepaper.pdf";
+
 const footerLinks = {
   company: [
     { href: "/about", label: "About" },
@@ -9,13 +12,14 @@ const footerLinks = {
     { href: "/culture", label: "Culture" },
     { href: "/contact", label: "Contact" },
   ],
-  ventures: [
-    { href: "/rand4u", label: "Rand4U" },
-    { href: "https://rand4u.com", label: "rand4u.com", external: true },
+  resources: [
+    { href: "/protocol", label: "Protocol" },
+    { href: LITEPAPER_URL, label: "Litepaper", external: true },
+    { href: "https://github.com/farmore-network", label: "GitHub", external: true },
   ],
   connect: [
-    { href: "mailto:reply@nodods.com", label: "reply@nodods.com" },
-    { href: "mailto:reply@rand4u.com", label: "reply@rand4u.com" },
+    { href: "mailto:hello@farmore.network", label: "hello@farmore.network" },
+    { href: "https://x.com/farmore_network", label: "X", external: true },
   ],
 };
 
@@ -38,11 +42,11 @@ export function Footer() {
                 className="h-5 w-auto"
               />
               <span className="font-display font-semibold text-2xl tracking-tight">
-                Nodods
+                Farmore
               </span>
             </Link>
             <p className="text-nodods-white/60 text-sm leading-relaxed max-w-xs">
-              The world&apos;s best for everyday people.
+              One name. One balance. One account.
             </p>
           </div>
 
@@ -65,13 +69,13 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Ventures */}
+          {/* Resources */}
           <div>
             <h4 className="font-display font-medium text-sm mb-4 text-nodods-white/50 uppercase tracking-wider">
-              Ventures
+              Resources
             </h4>
             <ul className="space-y-3">
-              {footerLinks.ventures.map((link) => (
+              {footerLinks.resources.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
@@ -111,6 +115,8 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
+                    target={link.external ? "_blank" : undefined}
+                    rel={link.external ? "noopener noreferrer" : undefined}
                     className="text-sm text-nodods-white/70 hover:text-nodods-white transition-colors"
                   >
                     {link.label}
@@ -118,20 +124,16 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-            <p className="text-sm text-nodods-white/50 mt-4">
-              Cape Town, South Africa
-            </p>
           </div>
         </div>
 
         {/* Bottom */}
         <div className="mt-16 pt-8 border-t border-nodods-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-nodods-white/50">
-            © {new Date().getFullYear()} Nodods Holdings (Pty) Ltd. All rights
-            reserved.
+            © 2026 Farmore. All rights reserved.
           </p>
           <p className="text-sm text-nodods-white/50">
-            Built for everyday people.
+            Open. Chain-neutral.
           </p>
         </div>
       </div>

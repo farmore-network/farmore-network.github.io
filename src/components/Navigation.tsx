@@ -8,7 +8,7 @@ import { ImageLogo } from "@/assets/images";
 
 const navLinks = [
   { href: "/about", label: "About" },
-  { href: "/rand4u", label: "Rand4U" },
+  { href: "/protocol", label: "Protocol" },
   { href: "/team", label: "Team" },
   { href: "/culture", label: "Culture" },
   { href: "/contact", label: "Contact" },
@@ -35,7 +35,7 @@ export function Navigation() {
               className="h-6 w-auto"
             />
             <span className="font-display font-semibold text-xl md:text-2xl tracking-tight text-nodods-navy">
-              Nodods
+              Farmore
             </span>
           </Link>
 

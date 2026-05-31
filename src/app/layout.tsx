@@ -10,54 +10,52 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nodods.com"),
+  metadataBase: new URL("https://farmore.network"),
   title: {
-    default: "Nodods Holdings | The World's Best for Everyday People",
-    template: "%s | Nodods Holdings",
+    default: "Farmore — One name. One balance. One account.",
+    template: "%s | Farmore",
   },
   description:
-    "Nodods Holdings is a mission-driven company dedicated to being the world's best for everyday people. Through impact-driven ventures like Rand4U, we address fundamental human needs and empower communities across South Africa.",
+    "An open, chain-neutral protocol for unified blockchain identity. One name. One account. One balance.",
   keywords: [
-    "Nodods Holdings",
-    "Rand4U",
-    "blockchain rewards",
-    "cryptocurrency",
-    "South Africa",
-    "financial empowerment",
-    "everyday people",
-    "Cape Town",
-    "digital currency",
-    "referral rewards",
+    "Farmore",
+    "blockchain identity",
+    "unified wallet",
+    "chain-neutral protocol",
+    "multi-chain",
+    "self-custodial",
+    "Web3 handle",
+    "cross-chain",
   ],
-  authors: [{ name: "Nodods Holdings" }],
-  creator: "Nodods Holdings (Pty) Ltd",
-  publisher: "Nodods Holdings",
+  authors: [{ name: "Farmore" }],
+  creator: "Farmore",
+  publisher: "Farmore",
   robots: {
     index: true,
     follow: true,
   },
   openGraph: {
     type: "website",
-    locale: "en_ZA",
-    url: "https://nodods.com",
-    siteName: "Nodods Holdings",
-    title: "Nodods Holdings | The World's Best for Everyday People",
+    locale: "en",
+    url: "https://farmore.network",
+    siteName: "Farmore",
+    title: "Farmore — One name. One balance. One account.",
     description:
-      "Mission-driven company building impact-driven ventures for everyday people across generations.",
+      "An open, chain-neutral protocol for unified blockchain identity.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Nodods Holdings",
+        alt: "Farmore",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nodods Holdings | The World's Best for Everyday People",
+    title: "Farmore — One name. One balance. One account.",
     description:
-      "Mission-driven company building impact-driven ventures for everyday people across generations.",
+      "An open, chain-neutral protocol for unified blockchain identity.",
     images: ["/og-image.png"],
   },
 };

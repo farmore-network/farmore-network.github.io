@@ -1,58 +1,61 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+const LITEPAPER_URL =
+  "https://github.com/farmore-network/farmore-litepaper/blob/main/Farmore-Litepaper.pdf";
+
 export const metadata: Metadata = {
-  title: "Rand4U",
+  title: "Protocol",
   description:
-    "Rand4U is a multi-cryptocurrency referral hub where everyday people earn real digital currencies. Get your blockchain rewards now.",
+    "Farmore is an open, chain-neutral protocol for unified blockchain identity. One name. One balance. One account.",
 };
 
 const howItWorks = [
   {
     step: "01",
-    title: "Sign up for free",
-    description: "Create your account at rand4u.com in minutes. No payment or crypto knowledge required.",
+    title: "Register one handle",
+    description: "Claim a name like @nododile once. Self-custodial, recoverable, portable across every chain.",
   },
   {
     step: "02",
-    title: "Complete simple actions",
-    description: "Participate in referrals, complete tasks, and engage with educational content.",
+    title: "Receive everywhere",
+    description: "Anyone, on any chain, can send to your handle. Farmore resolves identity, not addresses.",
   },
   {
     step: "03",
-    title: "Earn real rewards",
-    description: "Receive real Rand and cryptocurrency rewards automatically tracked and distributed.",
+    title: "Hold one balance",
+    description: "See assets across every chain as one balance. Spend without thinking about which network they live on.",
   },
   {
     step: "04",
-    title: "Withdraw earnings",
-    description: "Transfer your earnings directly to your bank account whenever you're ready.",
+    title: "Send by name",
+    description: "Move value by handle. No bridges to pick, no gas token to hold, no chain selection.",
   },
 ];
 
 const offerings = [
   {
-    title: "Blockchain Referral Programs",
-    description: "Partner with verified crypto platforms like Luno where users earn rewards for successful referrals.",
+    title: "Unified Identity",
+    description: "One handle that resolves across every supported chain. Self-custodial and recoverable, without seed phrases.",
   },
   {
-    title: "Bitcoin Rewards",
-    description: "Receive R200 worth of Bitcoin when you complete onboarding with partner platforms.",
+    title: "One Balance",
+    description: "A single view of value across chains. Farmore aggregates the math so you don't have to.",
   },
   {
-    title: "Automated Tracking",
-    description: "Seamless reward tracking and distribution ensures you never miss an earned reward.",
+    title: "Chain-Neutral by Default",
+    description: "No favorite chain, no house token. New chains plug in without breaking existing handles.",
   },
 ];
 
 const advantages = [
-  "Trusted, verified opportunities (no scams)",
-  "Simple, accessible interface for everyday people",
-  "Real money payouts (not just points or vouchers)",
-  "Part of mission-driven Nodods Holdings",
+  "Open protocol, anyone can integrate",
+  "Self-custodial — keys stay with users",
+  "Chain-neutral — no preferred network",
+  "No bridges, no gas-token juggling",
 ];
 
-export default function Rand4UPage() {
+export default function ProtocolPage() {
   return (
     <>
       {/* Hero */}
@@ -61,31 +64,31 @@ export default function Rand4UPage() {
           <div className="max-w-4xl">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-nodods-navy/10 rounded-full mb-6 animate-fade-in">
               <span className="w-2 h-2 bg-nodods-navy rounded-full animate-pulse" />
-              <span className="text-nodods-navy text-sm font-medium">Current Venture</span>
+              <span className="text-nodods-navy text-sm font-medium">The Protocol</span>
             </div>
             <h1 className="font-display font-semibold text-display-xl text-nodods-navy mb-6 animate-fade-in-up delay-100">
-              Rand4U
+              Farmore
             </h1>
             <p className="text-2xl md:text-3xl font-display text-nodods-navy-light mb-6 animate-fade-in-up delay-200">
-              &ldquo;Get your blockchain rewards now.&rdquo;
+              &ldquo;One name. One balance. One account.&rdquo;
             </p>
             <p className="text-nodods-muted text-xl leading-relaxed mb-10 animate-fade-in-up delay-300">
-              A multi-cryptocurrency referral hub where everyday people earn real digital currencies.
+              An open, chain-neutral protocol for unified blockchain identity.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-400">
               <Link
-                href="https://rand4u.com"
+                href={LITEPAPER_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-4 bg-nodods-navy text-nodods-white font-medium rounded-full hover:bg-nodods-navy-light transition-colors text-center"
               >
-                Visit rand4u.com
+                Read the litepaper
               </Link>
               <Link
-                href="#how-it-works"
+                href="/waitlist.html"
                 className="px-8 py-4 border border-nodods-navy/20 text-nodods-navy rounded-full hover:bg-nodods-navy/5 transition-colors text-center"
               >
-                How it works
+                Join the waitlist
               </Link>
             </div>
           </div>
@@ -98,37 +101,37 @@ export default function Rand4UPage() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="font-display font-semibold text-display-sm text-nodods-navy mb-6">
-                What is Rand4U?
+                What is Farmore?
               </h2>
               <p className="text-nodods-muted text-lg leading-relaxed mb-6">
-                Rand4U empowers everyday South Africans to participate in the cryptocurrency economy without any prior knowledge or upfront investment.
+                Farmore is an open, chain-neutral protocol for unified blockchain identity. Today&apos;s blockchain users juggle a dozen wallets, a dozen addresses, and a bridge every time value moves.
               </p>
               <p className="text-nodods-muted text-lg leading-relaxed">
-                Through our platform, users complete simple actions and earn real rewards—not points or vouchers, but actual Rand and cryptocurrency they can withdraw to their bank accounts.
+                Farmore unifies all of it: you register one handle, like @nododile, and people send to that name across every blockchain. One balance, one account, one identity.
               </p>
             </div>
             <div className="bg-nodods-white rounded-3xl p-8 md:p-10 shadow-sm border border-nodods-navy/5">
-              <h3 className="font-display font-medium text-lg mb-6 text-nodods-navy">Target Market</h3>
+              <h3 className="font-display font-medium text-lg mb-6 text-nodods-navy">Who it&apos;s for</h3>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-nodods-navy mt-2.5 flex-shrink-0" />
                   <div>
-                    <p className="font-medium text-nodods-navy">Young Adults (18-35)</p>
-                    <p className="text-nodods-muted text-sm">Seeking exposure to digital currencies</p>
+                    <p className="font-medium text-nodods-navy">Everyday users</p>
+                    <p className="text-nodods-muted text-sm">Anyone tired of juggling wallets, bridges, and addresses</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-nodods-navy mt-2.5 flex-shrink-0" />
                   <div>
-                    <p className="font-medium text-nodods-navy">Students & Job Seekers</p>
-                    <p className="text-nodods-muted text-sm">Looking for accessible wealth-building opportunities</p>
+                    <p className="font-medium text-nodods-navy">Wallets &amp; apps</p>
+                    <p className="text-nodods-muted text-sm">Integrate Farmore handles for one-name onboarding</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-nodods-navy mt-2.5 flex-shrink-0" />
                   <div>
-                    <p className="font-medium text-nodods-navy">Geographic Focus</p>
-                    <p className="text-nodods-muted text-sm">Johannesburg, Cape Town, Durban, Pretoria (expanding nationally)</p>
+                    <p className="font-medium text-nodods-navy">Chains &amp; rollups</p>
+                    <p className="text-nodods-muted text-sm">Plug a new chain into the protocol without breaking handles</p>
                   </div>
                 </li>
               </ul>
@@ -161,12 +164,12 @@ export default function Rand4UPage() {
         </div>
       </section>
 
-      {/* Current Offerings */}
+      {/* What it gives you */}
       <section className="section-padding py-20 md:py-28 border-t border-nodods-navy/10 bg-nodods-white">
         <div className="page-max-width">
           <div className="text-center mb-16">
-            <p className="text-nodods-navy font-medium text-sm uppercase tracking-widest mb-4">What We Offer</p>
-            <h2 className="font-display font-semibold text-display-md text-nodods-navy">Current offerings</h2>
+            <p className="text-nodods-navy font-medium text-sm uppercase tracking-widest mb-4">What it gives you</p>
+            <h2 className="font-display font-semibold text-display-md text-nodods-navy">Current capabilities</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {offerings.map((offering) => (
@@ -179,15 +182,15 @@ export default function Rand4UPage() {
         </div>
       </section>
 
-      {/* Competitive Advantage */}
+      {/* Why Farmore */}
       <section className="section-padding py-20 md:py-28 bg-nodods-light">
         <div className="page-max-width">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <p className="text-nodods-navy font-medium text-sm uppercase tracking-widest mb-4">Why Rand4U</p>
-              <h2 className="font-display font-semibold text-display-sm text-nodods-navy mb-6">Our competitive advantage</h2>
+              <p className="text-nodods-navy font-medium text-sm uppercase tracking-widest mb-4">Why Farmore</p>
+              <h2 className="font-display font-semibold text-display-sm text-nodods-navy mb-6">Open, portable, self-custodial</h2>
               <p className="text-nodods-muted text-lg leading-relaxed">
-                In a market flooded with scams and empty promises, Rand4U stands apart by offering real, verified opportunities backed by Nodods Holdings&apos; mission-driven approach.
+                In a fragmented landscape of wallets, addresses, and bridges, Farmore offers a single open protocol that users own, anyone can integrate, and no one controls.
               </p>
             </div>
             <div>
@@ -211,21 +214,26 @@ export default function Rand4UPage() {
       {/* CTA */}
       <section className="section-padding py-20 md:py-28 border-t border-nodods-navy/10 bg-nodods-white">
         <div className="page-max-width text-center">
-          <h2 className="font-display font-semibold text-display-sm text-nodods-navy mb-6">Start earning today</h2>
+          <h2 className="font-display font-semibold text-display-sm text-nodods-navy mb-6">Get involved</h2>
           <p className="text-nodods-muted text-lg max-w-2xl mx-auto mb-10">
-            Join thousands of South Africans already earning real rewards through Rand4U. It&apos;s free to sign up and takes just minutes to get started.
+            Read the litepaper for the full protocol design, or join the waitlist to be notified when handles open for registration.
           </p>
-          <Link
-            href="https://rand4u.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-nodods-navy text-nodods-white font-medium rounded-full hover:bg-nodods-navy-light transition-colors"
-          >
-            Get started at rand4u.com
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-            </svg>
-          </Link>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Link
+              href={LITEPAPER_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 bg-nodods-navy text-nodods-white font-medium rounded-full hover:bg-nodods-navy-light transition-colors"
+            >
+              Read the litepaper
+            </Link>
+            <Link
+              href="/waitlist.html"
+              className="px-8 py-4 border border-nodods-navy/20 text-nodods-navy rounded-full hover:bg-nodods-navy/5 transition-colors"
+            >
+              Join the waitlist
+            </Link>
+          </div>
         </div>
       </section>
     </>

@@ -8,5 +8,5 @@ export type ImageDataType = {
 
 export const ImageLogo: ImageDataType = {
   src: Logo,
-  alt: 'Nodods Logo',
+  alt: 'Farmore Logo',
 };

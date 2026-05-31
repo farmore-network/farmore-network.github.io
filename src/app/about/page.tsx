@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Nodods Holdings is a mission-driven South African company dedicated to being the world's best for everyday people through impact-driven ventures.",
+    "Farmore is an open, chain-neutral protocol for unified blockchain identity. One name. One account. One balance.",
 };
 
 export default function AboutPage() {
@@ -15,73 +15,72 @@ export default function AboutPage() {
         <div className="page-max-width">
           <div className="max-w-4xl">
             <p className="text-nodods-navy font-medium text-sm uppercase tracking-widest mb-6 animate-fade-in">
-              About Nodods Holdings
+              About Farmore
             </p>
             <h1 className="font-display font-semibold text-display-xl text-nodods-navy mb-8 animate-fade-in-up delay-100">
-              Building for
+              Building
               <br />
-              <span className="text-nodods-navy-light">everyday people</span>
+              <span className="text-nodods-navy-light">unified identity</span>
             </h1>
             <p className="text-nodods-muted text-xl md:text-2xl leading-relaxed animate-fade-in-up delay-200">
-              We are an unconventional company. We&apos;re building an
-              institution designed to serve everyday people for generations to
-              come.
+              Farmore is an open, chain-neutral protocol designed to give every
+              user one identity that works everywhere value moves.
             </p>
           </div>
         </div>
       </section>
 
-      {/* What is Nodods */}
+      {/* What is Farmore */}
       <section className="section-padding py-20 md:py-28 border-t border-nodods-navy/10 bg-nodods-light">
         <div className="page-max-width">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div>
               <h2 className="font-display font-semibold text-display-sm text-nodods-navy mb-6">
-                What is Nodods?
+                What is Farmore?
               </h2>
               <p className="text-nodods-muted text-lg leading-relaxed mb-6">
-                Nodods Holdings (Pty) Ltd is a mission-driven company
-                headquartered in Cape Town, South Africa. Founded in 2024, we
-                are dedicated to being the world&apos;s best for everyday
-                people.
+                Farmore is an open, chain-neutral protocol for unified
+                blockchain identity. Today&apos;s blockchain users juggle a
+                dozen wallets, a dozen addresses, and a bridge every time value
+                moves.
               </p>
               <p className="text-nodods-muted text-lg leading-relaxed mb-6">
-                Through our flagship platform Rand4U, we empower users through
-                blockchain-based rewards. Users can earn real digital currencies
-                by completing simple actions like referrals, tasks, and
-                educational content—all without any upfront investment.
+                Farmore unifies all of it: you register one handle, like
+                @nododile, and people send to that name across every
+                blockchain. One balance, one account, one identity.
               </p>
               <p className="text-nodods-muted text-lg leading-relaxed">
-                We believe everyday people deserve access to the best products
-                and services, and we&apos;re building ventures that make this a
-                reality.
+                No bridges to choose. No gas token to hold. No seed phrase to
+                lose.
               </p>
             </div>
             <div className="bg-nodods-white rounded-3xl p-8 md:p-10 shadow-sm border border-nodods-navy/5">
               <h3 className="font-display font-medium text-lg mb-6 text-nodods-navy">
-                Company Details
+                Protocol Details
               </h3>
               <dl className="space-y-4">
                 <div className="flex justify-between items-start pb-4 border-b border-nodods-navy/10">
-                  <dt className="text-nodods-muted">Legal Name</dt>
+                  <dt className="text-nodods-muted">Name</dt>
                   <dd className="text-right font-medium text-nodods-navy">
-                    Nodods Holdings (Pty) Ltd
+                    Farmore
                   </dd>
                 </div>
                 <div className="flex justify-between items-start pb-4 border-b border-nodods-navy/10">
-                  <dt className="text-nodods-muted">Registration</dt>
+                  <dt className="text-nodods-muted">Type</dt>
                   <dd className="text-right font-medium text-nodods-navy">
-                    South African (Pty) Ltd
+                    Open, chain-neutral protocol
                   </dd>
                 </div>
                 <div className="flex justify-between items-start pb-4 border-b border-nodods-navy/10">
-                  <dt className="text-nodods-muted">Founded</dt>
-                  <dd className="text-right font-medium text-nodods-navy">2024</dd>
+                  <dt className="text-nodods-muted">Status</dt>
+                  <dd className="text-right font-medium text-nodods-navy">
+                    Litepaper v1.0
+                  </dd>
                 </div>
                 <div className="flex justify-between items-start">
-                  <dt className="text-nodods-muted">Headquarters</dt>
+                  <dt className="text-nodods-muted">Custody</dt>
                   <dd className="text-right font-medium text-nodods-navy">
-                    Cape Town, South Africa
+                    Self-custodial
                   </dd>
                 </div>
               </dl>
@@ -115,7 +114,7 @@ export default function AboutPage() {
                 Our Mission
               </h3>
               <p className="text-xl md:text-2xl font-display text-nodods-white leading-snug">
-                To be the world&apos;s best for everyday people.
+                One name. One balance. One account — for every blockchain user.
               </p>
             </div>
 
@@ -146,8 +145,8 @@ export default function AboutPage() {
                 Our Vision
               </h3>
               <p className="text-nodods-white/70 text-lg leading-relaxed">
-                To serve everyday people across generations through
-                impact-driven ventures that address fundamental human needs.
+                An open internet of value where identity, balance, and intent
+                travel seamlessly across every chain.
               </p>
             </div>
           </div>
@@ -158,7 +157,7 @@ export default function AboutPage() {
               Our Philosophy
             </p>
             <p className="text-2xl md:text-3xl font-display font-medium text-nodods-white leading-snug">
-              We believe everyday people deserve the best products and services.
+              Identity should be open, portable, and self-custodial.
             </p>
           </div>
         </div>
@@ -169,13 +168,11 @@ export default function AboutPage() {
         <div className="page-max-width">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="font-display font-semibold text-display-sm text-nodods-navy mb-8">
-              We&apos;re patient, principled, and relentlessly focused on our
-              mission.
+              Open. Chain-neutral. Self-custodial.
             </h2>
             <p className="text-nodods-muted text-lg leading-relaxed mb-8">
-              We measure success not by quarterly returns, but by lives
-              improved, families strengthened, and communities empowered.
-              We&apos;re building for everyday people.
+              Farmore is built to outlast any single chain. We design for
+              users, not platforms — and we ship in the open.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
