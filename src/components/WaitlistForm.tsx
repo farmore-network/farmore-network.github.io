@@ -5,7 +5,8 @@ import { useState } from "react";
 // Paste your deployed Google Apps Script Web App URL here.
 // See WAITLIST_SETUP.md for the 5-minute setup. It looks like:
 // https://script.google.com/macros/s/AKfy.../exec
-const WAITLIST_ENDPOINT = "REPLACE_WITH_APPS_SCRIPT_URL";
+const WAITLIST_ENDPOINT =
+  "https://script.google.com/macros/s/AKfycbyfKACMlVrDgt944T8a3ebVwbryKF535zS8gpAbgkWQOjkXtaD58TOYNBey_y1A9b-5UA/exec";
 
 const roles = ["Future user", "Builder", "Contributor"];
 

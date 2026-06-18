@@ -102,3 +102,10 @@ function json_(obj) {
   (Tools → Notification settings) or extend `doPost` to call `MailApp`.
 - The endpoint is public by design. If spam becomes an issue, add a honeypot
   field or a simple shared token — ask and I'll wire it up.
+
+## Troubleshooting
+
+- **A submission returns "You need access" / HTTP 403.** The deployment isn't
+  public. Go to **Deploy → Manage deployments → edit ✎** and set **Who has
+  access** to **`Anyone`** (not *"Anyone with a Google account"*), then
+  **Deploy**. The `…/exec` URL stays the same.
