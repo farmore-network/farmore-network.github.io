@@ -32,12 +32,12 @@ export default function ContactPage() {
             <div className="bg-nodods-white rounded-3xl p-8 md:p-10 border border-nodods-navy/5">
               <h3 className="font-display font-semibold text-2xl text-nodods-navy mb-2">General Inquiries</h3>
               <p className="text-nodods-muted mb-6">For general questions about Farmore</p>
-              <a href="mailto:hello@farmore.network" className="text-nodods-navy font-medium">hello@farmore.network</a>
+              <a href="mailto:farmore.reply@gmail.com" className="text-nodods-navy font-medium">farmore.reply@gmail.com</a>
             </div>
             <div className="bg-nodods-white rounded-3xl p-8 md:p-10 border border-nodods-navy/5">
               <h3 className="font-display font-semibold text-2xl text-nodods-navy mb-2">Partnerships & Press</h3>
               <p className="text-nodods-muted mb-6">For partnerships, integrations, and media</p>
-              <a href="mailto:hello@farmore.network" className="text-nodods-navy font-medium">hello@farmore.network</a>
+              <a href="mailto:farmore.reply@gmail.com" className="text-nodods-navy font-medium">farmore.reply@gmail.com</a>
             </div>
           </div>
 

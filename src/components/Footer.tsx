@@ -18,7 +18,7 @@ const footerLinks = {
     { href: "https://github.com/farmore-network", label: "GitHub", external: true },
   ],
   connect: [
-    { href: "mailto:hello@farmore.network", label: "hello@farmore.network" },
+    { href: "mailto:farmore.reply@gmail.com", label: "farmore.reply@gmail.com" },
     { href: "https://x.com/farmore_network", label: "X", external: true },
   ],
 };

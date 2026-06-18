@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Farmore is an open, chain-neutral protocol for unified blockchain identity. One name. One account. One balance.",
+    "Why Farmore exists: blockchain payments are fragmented across a hundred chains and drained by bridge hacks. Farmore unifies identity into one name, one balance, one account.",
 };
 
 export default function AboutPage() {
@@ -17,71 +17,72 @@ export default function AboutPage() {
             <p className="text-nodods-navy font-medium text-sm uppercase tracking-widest mb-6 animate-fade-in">
               About Farmore
             </p>
-            <h1 className="font-display font-semibold text-display-xl text-nodods-navy mb-8 animate-fade-in-up delay-100">
-              Building
+            <h1 className="font-display font-semibold text-display-xl text-nodods-navy mb-8 animate-fade-in-up delay-100 text-balance">
+              Making the bridge
               <br />
-              <span className="text-nodods-navy-light">unified identity</span>
+              <span className="text-nodods-navy-light">disappear.</span>
             </h1>
-            <p className="text-nodods-muted text-xl md:text-2xl leading-relaxed animate-fade-in-up delay-200">
-              Farmore is an open, chain-neutral protocol designed to give every
-              user one identity that works everywhere value moves.
+            <p className="text-nodods-muted text-xl md:text-2xl leading-relaxed animate-fade-in-up delay-200 max-w-3xl">
+              Farmore is an open, chain-neutral protocol that gives every user
+              one identity — one name that works everywhere value moves.
             </p>
           </div>
         </div>
       </section>
 
-      {/* What is Farmore */}
+      {/* The problem */}
       <section className="section-padding py-20 md:py-28 border-t border-nodods-navy/10 bg-nodods-light">
         <div className="page-max-width">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div>
+              <p className="text-nodods-navy font-medium text-sm uppercase tracking-widest mb-4">
+                Why we exist
+              </p>
               <h2 className="font-display font-semibold text-display-sm text-nodods-navy mb-6">
-                What is Farmore?
+                Blockchains promised to fix payments. They haven&apos;t — yet.
               </h2>
               <p className="text-nodods-muted text-lg leading-relaxed mb-6">
-                Farmore is an open, chain-neutral protocol for unified
-                blockchain identity. Today&apos;s blockchain users juggle a
-                dozen wallets, a dozen addresses, and a bridge every time value
-                moves.
-              </p>
-              <p className="text-nodods-muted text-lg leading-relaxed mb-6">
-                Farmore unifies all of it: you register one handle, like
-                @nododile, and people send to that name across every
-                blockchain. One balance, one account, one identity.
+                Money moves badly on chains today. The space fragmented into more
+                than a hundred independent networks, each with its own addresses,
+                assets, and formats. Sending value between them means picking a
+                bridge — and bridges have proved among the highest-risk software
+                in the industry.
               </p>
               <p className="text-nodods-muted text-lg leading-relaxed">
-                No bridges to choose. No gas token to hold. No seed phrase to
-                lose.
+                Farmore exists to make that workflow disappear. You register a
+                handle, type “send 100 USDC to @y,” and press send. The funds
+                arrive on your recipient&apos;s preferred chain in seconds. One
+                name, one balance, across every blockchain.
               </p>
             </div>
             <div className="bg-nodods-white rounded-3xl p-8 md:p-10 shadow-sm border border-nodods-navy/5">
               <h3 className="font-display font-medium text-lg mb-6 text-nodods-navy">
-                Protocol Details
+                The cost of fragmentation
               </h3>
-              <dl className="space-y-4">
-                <div className="flex justify-between items-start pb-4 border-b border-nodods-navy/10">
-                  <dt className="text-nodods-muted">Name</dt>
-                  <dd className="text-right font-medium text-nodods-navy">
-                    Farmore
+              <dl className="space-y-5">
+                <div className="flex items-baseline justify-between gap-4 pb-5 border-b border-nodods-navy/10">
+                  <dd className="font-display text-3xl font-semibold text-nodods-navy">
+                    $4.3B
                   </dd>
+                  <dt className="text-nodods-muted text-right text-sm">
+                    stolen in bridge hacks, 49 incidents (2021–2024)
+                  </dt>
                 </div>
-                <div className="flex justify-between items-start pb-4 border-b border-nodods-navy/10">
-                  <dt className="text-nodods-muted">Type</dt>
-                  <dd className="text-right font-medium text-nodods-navy">
-                    Open, chain-neutral protocol
+                <div className="flex items-baseline justify-between gap-4 pb-5 border-b border-nodods-navy/10">
+                  <dd className="font-display text-3xl font-semibold text-nodods-navy">
+                    100+
                   </dd>
+                  <dt className="text-nodods-muted text-right text-sm">
+                    independent chains, each its own island
+                  </dt>
                 </div>
-                <div className="flex justify-between items-start pb-4 border-b border-nodods-navy/10">
-                  <dt className="text-nodods-muted">Status</dt>
-                  <dd className="text-right font-medium text-nodods-navy">
-                    Litepaper v1.0
+                <div className="flex items-baseline justify-between gap-4">
+                  <dd className="font-display text-3xl font-semibold text-nodods-navy">
+                    6.36%
                   </dd>
-                </div>
-                <div className="flex justify-between items-start">
-                  <dt className="text-nodods-muted">Custody</dt>
-                  <dd className="text-right font-medium text-nodods-navy">
-                    Self-custodial
-                  </dd>
+                  <dt className="text-nodods-muted text-right text-sm">
+                    average cost of a $200 cross-border transfer
+                  </dt>
                 </div>
               </dl>
             </div>
@@ -163,23 +164,67 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Closing Statement */}
+      {/* At a glance */}
       <section className="section-padding py-20 md:py-28 border-t border-nodods-navy/10 bg-nodods-white">
+        <div className="page-max-width">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <p className="text-nodods-navy font-medium text-sm uppercase tracking-widest mb-4">
+                At a glance
+              </p>
+              <h2 className="font-display font-semibold text-display-sm text-nodods-navy mb-6">
+                Open. Chain-neutral. Self-custodial.
+              </h2>
+              <p className="text-nodods-muted text-lg leading-relaxed">
+                Farmore is built to outlast any single chain. The native token,
+                FAR, is earned only by verifiable work — never sold — and the
+                protocol stays a public good, kept structurally separate from any
+                company built around it.
+              </p>
+            </div>
+            <div className="bg-nodods-light rounded-3xl p-8 md:p-10 border border-nodods-navy/5">
+              <dl className="space-y-4">
+                {[
+                  ["Type", "Open, chain-neutral protocol"],
+                  ["Identity", "One handle, self-custodial"],
+                  ["Account", "Threshold signatures, no seed phrase"],
+                  ["Token", "FAR — 100% earned, 1B cap"],
+                  ["Status", "Litepaper v1 · June 2026"],
+                ].map(([term, value]) => (
+                  <div
+                    key={term}
+                    className="flex justify-between items-start gap-4 pb-4 border-b border-nodods-navy/10 last:border-0 last:pb-0"
+                  >
+                    <dt className="text-nodods-muted">{term}</dt>
+                    <dd className="text-right font-medium text-nodods-navy">
+                      {value}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Closing */}
+      <section className="section-padding py-20 md:py-28 border-t border-nodods-navy/10 bg-nodods-light">
         <div className="page-max-width">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="font-display font-semibold text-display-sm text-nodods-navy mb-8">
-              Open. Chain-neutral. Self-custodial.
+              The work that remains is the work of building it.
             </h2>
             <p className="text-nodods-muted text-lg leading-relaxed mb-8">
-              Farmore is built to outlast any single chain. We design for
-              users, not platforms — and we ship in the open.
+              The design is published. The protocol must now be implemented,
+              tested, audited, and earned. We design for users, not platforms —
+              and we ship in the open.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
-                href="/team"
+                href="/protocol"
                 className="px-8 py-4 bg-nodods-navy text-nodods-white font-medium rounded-full hover:bg-nodods-navy-light transition-colors"
               >
-                Meet our team
+                Explore the protocol
               </Link>
               <Link
                 href="/culture"

@@ -17,7 +17,7 @@ interface TeamMember {
 const leadership: TeamMember[] = [
   {
     name: "Thandile Nododile",
-    role: "Founder & CEO",
+    role: "Founder",
     commitment: "Full-time",
     bio: "Founder of Farmore, Thandile leads protocol design and the mission to give every blockchain user one name, one balance, and one account.",
     initials: "TN",

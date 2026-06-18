@@ -7,11 +7,9 @@ import { useState } from "react";
 import { ImageLogo } from "@/assets/images";
 
 const navLinks = [
-  { href: "/about", label: "About" },
   { href: "/protocol", label: "Protocol" },
   { href: "/team", label: "Team" },
   { href: "/culture", label: "Culture" },
-  { href: "/contact", label: "Contact" },
 ];
 
 export function Navigation() {
