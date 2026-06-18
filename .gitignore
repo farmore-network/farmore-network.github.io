@@ -48,3 +48,6 @@ Thumbs.db
 # Misc
 *.log
 .cache
+
+# Internal setup notes (not for the public repo)
+WAITLIST_SETUP.md
