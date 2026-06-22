@@ -117,10 +117,6 @@ export default function TeamPage() {
               <br />
               <span className="text-nodods-navy-light">building Farmore</span>
             </h1>
-            <p className="text-nodods-muted text-xl leading-relaxed animate-fade-in-up delay-200 max-w-2xl">
-              A solo-led protocol, designed in the open and built for users. We
-              prefer standards over silos and ship in public.
-            </p>
           </div>
         </div>
       </section>
@@ -140,38 +136,6 @@ export default function TeamPage() {
             {leadership.map((member) => (
               <FounderCard key={member.name} member={member} />
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Team Stats */}
-      <section className="section-padding py-20 md:py-28 border-t border-nodods-navy/10 bg-nodods-white">
-        <div className="page-max-width">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
-              <p className="font-display text-5xl md:text-6xl font-semibold text-nodods-navy mb-2">
-                1
-              </p>
-              <p className="text-nodods-muted">Founder</p>
-            </div>
-            <div className="text-center">
-              <p className="font-display text-5xl md:text-6xl font-semibold text-nodods-navy mb-2">
-                1
-              </p>
-              <p className="text-nodods-muted">Full-time</p>
-            </div>
-            <div className="text-center">
-              <p className="font-display text-5xl md:text-6xl font-semibold text-nodods-navy mb-2">
-                ∞
-              </p>
-              <p className="text-nodods-muted">Chains</p>
-            </div>
-            <div className="text-center">
-              <p className="font-display text-5xl md:text-6xl font-semibold text-nodods-navy mb-2">
-                100%
-              </p>
-              <p className="text-nodods-muted">Mission-driven</p>
-            </div>
           </div>
         </div>
       </section>
