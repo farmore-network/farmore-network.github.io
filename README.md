@@ -1,6 +1,5 @@
 # Nodods Holdings - About Us Pages
 
-A modern, minimalist "About Us" website for Nodods Holdings built with Next.js 14, TypeScript, and Tailwind CSS.
 
 ## Features
 
